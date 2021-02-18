@@ -1,3 +1,32 @@
+/*Fonts*/
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff") format("woff"),
+       url("../fonts/roboto.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotomedium.woff") format("woff"),
+       url("../fonts/robotomedium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff") format("woff"),
+       url("../fonts/robotobold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 /*Variables*/
 
 :root {
@@ -21,7 +50,7 @@ body {
   min-width: 1440px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -63,17 +92,14 @@ nav,
 button,
 h3,
 h4,
-.stats {
+.stats,
+.paginator {
   text-transform: uppercase;
 }
 
 .catchphrase {
   font-size: 55px;
   line-height: 55px;
-}
-
-.inline-li {
-  display: inline;
 }
 
 .sixteen-eighteen {
@@ -127,4 +153,25 @@ h4,
 
 .page-title {
   height: 235px;
+}
+
+
+h3,
+h4,
+.stats,
+.friends,
+.sort {
+  font-weight: 700;
+}
+
+nav,
+button,
+.catchphrase,
+.about-us,
+.paginator {
+  font-weight: 500;
+}
+
+button .normal-button {
+  font-weight: 400;
 }
