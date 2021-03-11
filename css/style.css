@@ -46,8 +46,14 @@
   --grey-tap: #d5d5d5;
 }
 
+/* General */
+
+.header {
+  padding-top: 49px;
+}
+
 body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -62,6 +68,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.contacts-where {
+  background-image: url("../img/map1.jpg")
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* Buttons */
 
 .red-button {
   height: 50px;
@@ -81,6 +110,8 @@ img {
   border-radius: 3px;
 }
 
+/* Misc */
+
 header,
 .page-title,
 .slider-section {
@@ -96,6 +127,39 @@ h4,
 .paginator {
   text-transform: uppercase;
 }
+
+.page-title {
+  height: 235px;
+}
+
+.social > li {
+  height: 81px;
+  background-color: var(--grey-base);
+  border-radius: 50%;
+}
+
+.contacts-write {
+
+  width: 219px;
+  height: 216px;
+  padding: 49px 50px 47px;
+
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-title {
+  padding-top: 78px;
+}
+
+.inline-list > li {
+  margin-right: 45px;
+}
+
+/* Font sizes */
 
 .catchphrase {
   font-size: 55px;
@@ -127,6 +191,8 @@ h4,
   line-height: 36px;
 }
 
+/* Display */
+
 .slide {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -147,14 +213,63 @@ h4,
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.slider-section {
-  height: 425px;
+.catalog-full {
+  display: grid;
+  grid-template-columns: 3fr 8fr;
+  gap: 140px 48px;
 }
 
-.page-title {
-  height: 235px;
+.sorting-options {
+  grid-row: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 702px;
 }
 
+.sort,
+.paginator {
+  grid-column: 2 / -1;
+}
+
+.product-examples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 31px;
+}
+
+.header-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.stats-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 81px 81px 81px;
+  gap: 9px;
+}
+
+.social > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Font weights */
 
 h3,
 h4,

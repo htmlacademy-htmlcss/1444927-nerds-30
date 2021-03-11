@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <a><img src="img/nerds-logo.svg" width="160" height="65" alt="logo"></a>
-      <nav><ul>
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="catalog.html">магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul></nav>
-      <button type="button"><img src="img/cart.svg" width="15" height="11" alt="cart">корзина</button>
+    <header class="header">
+      <div class="container header-display">
+        <a><img src="img/nerds-logo.svg" width="160" height="65" alt="logo"></a>
+        <nav><ul class="inline-list">
+          <li><a href="#">студия</a></li>
+          <li><a href="#">клиенты</a></li>
+          <li><a href="catalog.html">магазин</a></li>
+          <li><a href="#">контакты</a></li>
+        </ul></nav>
+        <button type="button"><img src="img/cart.svg" width="15" height="11" alt="cart">корзина</button>
+      </div>
     </header>
     <main>
       <section class="slider-section">
-        <div class="slider">
+        <div class="slider container">
           <div class="slide">
             <div class="slider-description"><p class="catchphrase">Долго, дорого, скрупулёзно.</p>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
@@ -33,7 +35,7 @@
           </ul>
         </div>
       </section>
-      <section>
+      <section class="container">
         <ul class="product-list">
           <li><article>
             <img src="img/illustration-1-1.jpg" width="300" height="146" alt="websites">
@@ -55,7 +57,7 @@
           </article></li>
         </ul>
       </section>
-      <section class="introduction"><div><h2 class="fourty-five about-us">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <section class="introduction container"><div><h2 class="fourty-five about-us">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4>выполняем заказы на разработку:</h4>
       <ul>
@@ -65,36 +67,38 @@
       </ul></div>
       <div><img src="img/nerds-illustration-1.png" width="360" height="208" alt="logo with colours">
         <p class="stats">с 2004 года любим точность во всём</p>
-        <ul>
+        <ul class="stats-list">
           <li><h4 class="fourty-five">146%</h4><p class="sixteen-eighteen">Уровень самоотдачи</p></li>
           <li><h4 class="fourty-five">100%</h4><p class="sixteen-eighteen">Соблюдение сроков</p></li>
           <li><h4 class="fourty-five">50%</h4><p class="sixteen-eighteen">Минимальная предоплата</p></li>
         </ul>
       </div></section>
-      <section><ul class="partners">
+      <section class="container"><ul class="partners">
         <li><a href="#"><img src="img/htmlac.svg" width="199" height="68" alt="htmlacademy"></a></li>
         <li><a href="#"><img src="img/borodinski.svg" width="209" height="90" alt="borodinski"></a></li>
         <li><a href="#"><img src="img/pink.svg" width="185" height="52" alt="pink"></a></li>
         <li><a href="#"><img src="img/mishka.svg" width="173" height="84" alt="mishka"></a></li>
       </ul></section>
-      <section>
-        <img src="img/map1.jpg" width="1440" height="416" alt="карта"><img src="img/map-marker-1.png" width="231" height="190" alt="map marker">
-        <div>
+      <section class="contacts-where">
+        <div class="contacts-write container">
           <h3 class="contact-title">nёrds design studio</h3>
           <p class="sixteen-eighteen">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p class="sixteen-eighteen">тел. <a href="#">+7 (812) 275-75-75</a></p>
           <button type="button" class="red-button">напишите нам</button>
         </div>
+<!--        <img src="img/map-marker-1.png" width="231" height="190" alt="map marker">  -->
       </section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="#"><img src="img/vk-icon.svg" width="81" height="81" alt="vk"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="81" height="81" alt="facebook"></a></li>
-        <li><a href="#"><img src="img/insta-icon.svg" width="81" height="81" alt="insta"></a></li>
+    <footer class="footer container">
+      <ul class="social">
+        <li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
+        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+        <li><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="insta"></a></li>
       </ul>
-      <p class="friends">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div>
+        <p class="friends">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
   </body>
 </html>
